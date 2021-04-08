@@ -40,3 +40,89 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navAnchors = document.querySelectorAll("nav a")
+console.log(navAnchors)
+
+navAnchors.forEach((anchor, index) =>{
+  anchor.textContent = siteContent['nav']['nav-item-' + (index + 1)]
+})
+
+const ctaTitle = document.querySelectorAll('div h1')
+console.log(ctaTitle)
+ctaTitle[0].textContent = siteContent['cta']['h1']
+
+const ctaButton = document.querySelectorAll('div button')
+console.log(ctaButton)
+ctaButton[0].textContent = siteContent['cta']['button']
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+console.log(ctaImg)
+
+const featuresTitle = document.querySelectorAll('div h4')
+featuresTitle[0].textContent = siteContent['main-content']['features-h4']
+
+const featuresContent = document.querySelectorAll('div p')
+featuresContent[0].textContent = siteContent['main-content']['features-content']
+
+const aboutTitle = document.querySelectorAll('div h4')
+aboutTitle[1].textContent = siteContent['main-content']['about-h4']
+
+const aboutContent = document.querySelectorAll('div p')
+aboutContent[1].textContent = siteContent['main-content']['about-content']
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const servicesTitle = document.querySelectorAll('div h4')
+servicesTitle[2].textContent = siteContent['main-content']['services-h4']
+
+const servicesContent = document.querySelectorAll('div p')
+servicesContent[2].textContent = siteContent['main-content']['services-content']
+
+const productTitle = document.querySelectorAll('div h4')
+productTitle[3].textContent = siteContent['main-content']['product-h4']
+
+const productContent = document.querySelectorAll('div p')
+productContent[3].textContent = siteContent['main-content']['product-content']
+
+const visionTitle = document.querySelectorAll('div h4')
+visionTitle[4].textContent = siteContent['main-content']['vision-h4']
+
+const visionContent = document.querySelectorAll('div p')
+visionContent[4].textContent = siteContent['main-content']['vision-content']
+
+const contactTitle = document.querySelectorAll('div h4')
+contactTitle[5].textContent = siteContent['contact']['contact-h4']
+
+const addressSection = document.querySelectorAll('div p')
+addressSection[5].textContent = siteContent['contact']['address']
+
+const phoneSection = document.querySelectorAll('div p')
+phoneSection[6].textContent = siteContent['contact']['phone']
+
+const emailSection = document.querySelectorAll('div p')
+emailSection[7].textContent = siteContent['contact']['email']
+
+const footerSection = document.querySelectorAll('footer p')
+footerSection[0].textContent = siteContent['footer']['copyright']
+
+
+// navAnchors[0].textContent = siteContent['nav']['nav-item-1']
+// navAnchors[1].textContent = siteContent['nav']['nav-item-2']
+// navAnchors[2].textContent = siteContent['nav']['nav-item-3']
+// navAnchors[3].textContent = siteContent['nav']['nav-item-4']
+// navAnchors[4].textContent = siteContent['nav']['nav-item-5']
+// navAnchors[5].textContent = siteContent['nav']['nav-item-6']
+
+
+
+// const ctaTitle = document.querySelector('h1')
+// const cta = document.querySelector('cta')
+//   ctaTitle.textContent = 'DOM Is Awesome'
+//   console.log(ctaTitle)
+
+// const ctaButton = document.querySelector('button')
+//   ctaButton.textContent = 'Get Started'
+//   console.log(ctaButton)
